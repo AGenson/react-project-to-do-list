@@ -1,0 +1,216 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+
+.App {
+	width: 100%;
+	height: 100%;
+	background: url("https://archive-media-0.nyafuu.org/wg/image/1419/50/1419504514288.png") fixed no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+#header{
+	display: grid;
+	grid-template-columns: 25% auto 25%;
+	grid-template-rows: 230px 67px;
+	justify-items: stretch;
+}
+
+#body{
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows: 75px auto;
+	justify-items: stretch;
+}
+
+#intro{
+	grid-column: 2;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: auto 230px auto;
+	grid-template-rows: 230px;
+	justify-items: stretch;
+	color: rgb(250, 250, 250);
+	text-shadow: 2px 2px #ff0000;
+}
+
+#h2-1{
+	grid-column: 1;
+	grid-row: 1;
+	font-size: 5em;
+}
+
+.App-logo {
+	position: relative;
+	grid-column: 2;
+	grid-row: 1;
+	animation: App-logo-spin infinite 20s linear;
+	width: 389px;
+	height: 346px;
+	justify-self: center;
+	align-self: center;
+}
+
+#h2-2{
+	grid-column: 3;
+	grid-row: 1;
+	font-size: 5em;
+}
+
+#text{
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: auto 60px;
+	grid-template-rows: 67px;
+}
+
+button{
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+button:hover{
+	background-color: rgb(200,200,200);
+}
+
+#button_text{
+	grid-column: 2; 
+	grid-row: 1;
+	align-self: center;
+	border: none;
+	border-radius: 0px 30px 30px 0px;
+	background-image: -webkit-linear-gradient(top, rgb(150, 150, 150), rgb(230, 230, 230));
+	font-size: 3.5em;
+	color: rgb(50, 50, 50);
+	font-weight: bold;
+}
+
+#button_text:hover{
+	background-image: -webkit-linear-gradient(top, rgb(150, 150, 150), rgb(250, 250, 250));
+}
+
+#input_create_todo{
+	z-index: 1;
+	grid-column: 1; 
+	grid-row: 1;
+	border: none;
+	border: 2px solid rgba(200,200,200, 0);
+	border-bottom-color: rgba(200,200,200, 1);
+	border-radius: 10px 0px 0px 10px;
+	background: none;
+	color: rgb(250, 250, 250);
+	font-size: 1.5em;
+	text-align: center;
+	transition: border 1s;
+}
+
+::-webkit-input-placeholder{
+	color: rgb(170, 170, 170);
+}
+
+input:focus {
+	border-color: rgba(200,200,200, 1);
+	transition: border 1s;
+}
+
+button, input{
+	outline: none;
+}
+
+ul{
+	grid-column: 2;
+	grid-row: 2;
+	padding: 40px;
+	padding-bottom: 60px;
+	border: 2px solid rgb(230,230,230);
+	border-radius: 30px 30px 120px 120px;
+	background-color: rgba(240,240,240, 0.6);
+}
+
+.resp{
+	margin-bottom: 10px;
+	display: grid;
+	grid-template-columns: 130px auto 50px 130px;
+	grid-template-rows: 50px;
+	justify-items: stretch;
+	border-radius: 20px 20px 20px 20px;
+	border: 2px solid rgb(70,70,70);
+	background-color: rgba(200, 200, 200, 0.8);
+	list-style-type: none;
+	font-size: 1.1em;
+}
+
+.name{
+	grid-column: 2; 
+	grid-row: 1;
+	border: none;
+	background: none;
+	align-self: center;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.through{
+	text-decoration: line-through;
+}
+
+.button_left, .button_right{
+	grid-row: 1;
+	border: none;
+	text-shadow: 2px 2px rgb(170, 170, 170);
+	background-image: -webkit-linear-gradient(top, rgb(180, 180, 180), rgb(200, 200, 200));
+}
+
+.button_left:hover, .button_right:hover{
+	background-image: -webkit-linear-gradient(top, rgb(180, 180, 180), rgb(220, 220, 220));
+}
+
+.button_left{
+	grid-column: 1;
+	border-radius: 20px 0px 0px 20px;
+	border-right: 2px dashed rgb(150,150,150);
+}
+
+
+.button_right{
+	grid-column: 4;
+	border-radius: 0px 20px 20px 0px;
+	border-left: 2px dashed rgb(150,150,150);
+	color: rgb(150, 0, 0);
+}
+
+.div_check{
+	margin-top: 3px;
+	align-self: center;
+}
+
+input[type=checkbox]{
+	display: none;
+}
+ 
+input[type=checkbox] + label.check{
+	display:inline-block;
+	cursor: pointer;  
+	outline: none;  
+	width: 40px;
+	height: 40px;
+	background-image: url(https://psdtowp.net/images/resources/checkbox.png);
+	background-repeat: no-repeat;
+}
+
+input[type=checkbox] + label.check span{
+	vertical-align: -60px;
+}
+
+input[type=checkbox]:checked + label.check{
+	background-position: 0 bottom;
+}
+
+@keyframes App-logo-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
