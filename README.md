@@ -20,12 +20,10 @@ Here's the website instance, thanks to [surge](http://surge.sh/) (free static we
 # Features
 
 Features:
-- Count of todos
-- Filter (all / todos / completed)
 - Edit a todo
 - Complete a todo
 - Remove a todo
 
 Tools:
 - [React](https://github.com/facebook/react) for the structure of the website
-- [Redux](https://github.com/reactjs/redux) for local storage (count & todos)
+- [Axios](https://github.com/axios/axios) to connect to the API

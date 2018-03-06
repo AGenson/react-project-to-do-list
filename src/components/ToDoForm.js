@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 
+
+
 const ToDoForm = (props) => (
 	<div id="text">
 		<input
@@ -11,7 +13,7 @@ const ToDoForm = (props) => (
 				}
 			}}
 			type="text"
-			placeholder="Entrez une tâche"
+			placeholder="Enter a task"
 			value={props.text}
 			id="input_create_todo"
 		/>
@@ -20,5 +22,7 @@ const ToDoForm = (props) => (
 		</button>
 	</div>
 );
+
+
 
 export default ToDoForm;

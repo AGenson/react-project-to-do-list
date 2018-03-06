@@ -3,6 +3,8 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background: url("https://archive-media-0.nyafuu.org/wg/image/1419/50/1419504514288.png") fixed no-repeat;
+	background-size: cover;
 	font-family: sans-serif;
 }
 

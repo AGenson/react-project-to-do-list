@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 
+
+
 const ToDo = (props) => {
 	return !props.status ?
 			<div className={"name"+(props.completed ? " through" : "")}>
@@ -21,5 +23,7 @@ const ToDo = (props) => {
 				autoFocus
 			/>
 }
+
+
 
 export default ToDo;

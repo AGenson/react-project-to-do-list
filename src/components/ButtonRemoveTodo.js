@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
 
+
+
 const ButtonRemoveTodo = (props) => (
-	
 	<button
 		className={"button_right"}
 		onClick={() => {
@@ -14,5 +15,7 @@ const ButtonRemoveTodo = (props) => (
 		REMOVE
 	</button>
 );
+
+
 
 export default ButtonRemoveTodo;

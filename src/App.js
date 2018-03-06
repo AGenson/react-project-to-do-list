@@ -7,6 +7,8 @@ import ToDoDisplay from "./components/ToDoDisplay";
 
 import axios from "axios";
 
+
+
 class App extends Component {
 
 	state = {
@@ -211,12 +213,14 @@ class App extends Component {
 									/>
 								);
 							})
-						}	
+						}
 					</ul>
 				</div>
 			</div>
 		);
 	}
 }
+
+
 
 export default App;
