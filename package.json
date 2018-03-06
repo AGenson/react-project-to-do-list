@@ -1,7 +1,17 @@
 {
-  "name": "advanced-todo",
-  "version": "0.1.0",
+  "name": "react-project-to-do-list",
+  "version": "1.2.0",
   "private": true,
+  "keywords": [
+    "react",
+    "redux",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AGenson/react-project-to-do-list.git"
+  },
+  "author": "Anthony Genson",
   "dependencies": {
     "axios": "^0.17.1",
     "react": "^16.2.0",
